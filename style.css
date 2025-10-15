@@ -1,0 +1,23 @@
+body{
+    margin: 0;
+    padding: 0;
+    max-height: 100vh;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.previvet-logo{
+    max-width: 50vw;
+    height: auto;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+}
+.buttons a{
+    text-decoration: none;
+}
