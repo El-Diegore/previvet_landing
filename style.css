@@ -1,7 +1,13 @@
+:root{
+    --primary-color: #006766;
+    --secondary-color: #dff1f1;
+}
 body{
     margin: 0;
     padding: 0;
     max-height: 100vh;
+    background-color: var(--secondary-color);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 main{
     display: flex;
@@ -13,11 +19,47 @@ main{
     max-width: 50vw;
     height: auto;
 }
-.buttons{
+.btn-group{
     display: flex;
     justify-content: center;
     gap: 5%;
 }
-.buttons a{
+.btn{
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 8px 16px;
+    transition: all 0.5s ease;
     text-decoration: none;
+    gap: 5px;
+    border: solid 2px transparent;
+}
+.btn a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  transition: color 0.5s ease 0.2s;
+}
+.btn:hover{
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border: solid 2px var(--primary-color);
+}
+.btn:hover a {
+  color: var(--primary-color);
+}
+
+
+.fade-up {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1.5s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
