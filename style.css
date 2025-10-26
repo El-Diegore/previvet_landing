@@ -25,6 +25,12 @@ h2{
     color: var(--primary-color);
     margin-top: 0;
 }
+.animate-img{
+    position: absolute;
+    max-height: 100vh;
+    right: 10px;
+    mask-image: linear-gradient(black 80%, transparent);
+}
 .attention-list{
     display: flex;
     color: var(--fountain-color);
