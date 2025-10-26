@@ -29,6 +29,7 @@ h2{
     position: relative;
     top: -3rem;
     max-height: 50vh;
+    width: auto;
     mask-image: linear-gradient(black 80%, transparent);
 }
 .attention-list{
@@ -69,6 +70,7 @@ h2{
     background-color: var(--secondary-color);
     color: var(--primary-color);
     border: solid 2px var(--primary-color);
+    cursor: pointer;
 }
 .btn:hover a {
   color: var(--primary-color);
@@ -109,13 +111,30 @@ h2{
 @media (min-width: 1024px){
     .animate-img{
     position: absolute;
-    max-height: 100vh;
-    right: 10px;
+    max-height: 70vh;
+    right: 0;
+    }
+    .header{
+    font-size: 1.6rem;
+    }
+    h2{
+        font-size: 1rem;
+    }
+    .attention-list{
+        font-size: 1rem;
+        flex-direction: column;
+        text-align: start;
+    }
+}
+@media (min-width: 1440px){
+    .animate-img{
+        max-height: 100vh;
+        width: auto;
     }
     .header{
     font-size: 2.6rem;
     }
     .attention-list{
-        font-size: large;
+        flex-direction: row;
     }
 }
